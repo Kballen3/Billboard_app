@@ -1,0 +1,11 @@
+<h1><%= @artist.id ? 'Change Artist' : 'Add Artist' %></h1>
+<hr />
+<%= form_with(model: @artist, local: true, class: "ui form") do |f| %>
+  <div class="field">
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <%# <%= f.label :logo %>
+  <%# <%= f.text_field %>
+  <%= f.submit %>
+  </div>
+<% end %>
