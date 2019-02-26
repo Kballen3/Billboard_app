@@ -1,9 +1,8 @@
 <h1>Billboards</h1>
-<%= link_to 'Latino', song_billboard_index_path %>
-<%= link_to 'Eighties', song_billboard_index_path %>
+<%= link_to 'Create Billboard', new_billboard_path %>
 <ul>
     <% @billboards.each do |billboard| %>
-      <li> <%= link_to billboard.name, song_billboard_path(@billboard, song) %></li>
+      <li> <%= link_to billboard.name, billboard_path(billboard) %>
+      </li>
     <% end %>
 </ul>
-

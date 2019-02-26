@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     resources :songs
   end
   
-  resources :songs do
-    resources :billboard
+  resources :billboards do
+    resources :songs
   end
   
 end

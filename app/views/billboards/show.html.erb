@@ -1,8 +1,8 @@
 <h1><%= @billboard.name %></h1>
 <hr />
 <p>What would you like to do?</p>
-<%= link_to 'View Songs', song_path(@billboard, @song) %>
+<%= link_to 'View Songs', billboard_songs_path(@billboard) %>
 <br />
-<%= link_to 'Change Billboard', edit_song_billboard_path(@billboard) %>
+<%= link_to 'Change Billboard', edit_billboard_song_path(@billboard) %>
 <br />
 <%= link_to 'Erase Billboard', @billboard, method: :delete %>

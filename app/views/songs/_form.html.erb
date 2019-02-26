@@ -3,6 +3,7 @@
 <%= form_for [@artist, @song] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, required: true, autofocus: true %>
+  <%#= f.select “@billboards_id”, options_for_select(@billboards.collect {|u| [u.name, u.id] },{:include_blank => true}) %>
   <br />
   <%= f.submit %>
 <% end %>
